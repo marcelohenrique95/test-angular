@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+  }
+  .container div {
+    border: 0px solid black;
+  }
+
+.divone {
+  background-color: rgb(52, 131, 168);
+}
+
+.group {
+  background-color: rgb(165, 165, 165);
+  display: flex;
+  height: 500px;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.group label{
+  font-size: 100px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.button {
+  background-color:rgb(52, 131, 168);
+
+}
+
+.divtwo{
+  background-color: rgb(92, 24, 19);
+  align-items: center;
+}
+
+.labeltwo {
+  background-color: rgba(236, 48, 48, 0.63);
+}
+
+.buttonstyle {
+  background-color: rgba(236, 48, 48, 0.63);
+  justify-content: center;
+  align-items: center;
+}
+
+.divimg{
+  height: 500px;
+  width: 100%;
+}
+
+.divimg img {
+  max-height:400px;
+}
+
+.row {
+  background-color: #5ff54b;
+}

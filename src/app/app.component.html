@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="divone">
+    <div>
+      <label>
+        <strong> Sequência de Fibonacci.</strong>
+      </label>
+    </div>
+    <div class="group">
+      <label>
+        {{this.result}}
+      </label>
+    </div>
+    <br><br>
+    <div class="button">
+      <button type="button" (click)="run()" *ngIf="!button" class="btn btn-secondary">Calcular</button>
+      <button type="button" (click)="run()" *ngIf="button" class="btn btn-success">Continuar</button>
+      <button type="button" (click)="restart()" class="btn btn-danger">Reiniciar</button>
+    </div>
+
+  </div>
+  <div class="divtwo">
+    <div class="labeltwo">
+      <label><strong>Show & Hide image</strong></label>
+    </div>
+    <div class="divimg">
+      <img *ngIf="showImage" src="./../assets/chac-logo.png">
+    </div>
+    <div class="buttonstyle">
+      <button type="button" (click)="showHide()" class="btn btn-success">{{buttonName}}</button>
+    </div>
+  </div>
+  <br>
+  <div>
+    <div>
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-md-5">
+            <label><strong> {{array}}</strong></label>
+          </div>
+          <div class="col-md-5">
+            <div class="form-group">
+              <input type="text" class="form-control" maxlength="1" (keyup)="onKey($event)" aria-describedby="emailHelp"
+                placeholder="digite">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divimg">
+        <button type="button" (click)="imageClick()">
+          <img src="./../assets/manto-sagrado.jpg">
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
